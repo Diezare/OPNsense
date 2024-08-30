@@ -1,0 +1,81 @@
+------------------------------------------------------------------------
+INSTALAÇÃO E CONFIGURAÇÃO BÁSICA DO OPNSENSE
+------------------------------------------------------------------------
+
+Introdução
+
+Este guia detalha o processo de instalação e configuração inicial do OPNsense, um firewall e router de código aberto, a partir de um Live CD. 
+As instruções assumem que o usuário possui conhecimentos básicos de sistemas operacionais e redes.
+
+Iniciando a Instalação
+
+Boot do Live CD:
+
+Inicie o sistema a partir do Live CD do OPNsense.
+Importante: Se desejar migrar configurações de um outro sistema OPNsense, pressione qualquer tecla durante o boot inicial. 
+
+Neste guia, seguiremos o processo de instalação padrão.
+
+Acesso ao Instalador:
+
+Após o carregamento completo do sistema, faça login como:
+
+Usuário: installer
+Senha: OPNsense
+
+Configuração do Sistema
+
+Layout do Teclado:
+
+Na primeira tela, configure o layout do teclado. 
+Recomenda-se utilizar "BRAZILIAN (ACCENT KEYS)" e, em seguida, selecionar "CONTINUE WITH BR.KDB KEYMAP".
+
+Instalação do Sistema:
+
+Escolha do Sistema de Arquivos: Selecione "INSTALL (ZFS)" para obter maior segurança e integridade dos dados.
+Configuração de RAID: Se você possui múltiplos discos rígidos e deseja configurar um RAID, selecione a opção adequada. 
+Caso contrário, continue com a configuração padrão.
+
+Seleção do Disco: Marque o disco rígido onde o OPNsense será instalado.
+
+Confirmação: Confirme a instalação respondendo "YES" à pergunta.
+
+Conclusão da Instalação:
+
+Aguarde a conclusão da instalação.
+Troca de Senha: Ao final, defina uma senha forte para o usuário root.
+
+Primeiro Acesso ao Sistema
+
+Reinicialização: Remova o Live CD e reinicie o sistema.
+
+Login: Faça login como usuário root e utilize a senha que você definiu anteriormente.
+
+Configuração da Interface de Rede
+
+Identificação das Interfaces:
+
+LAN: Geralmente, a primeira interface de rede é configurada como LAN.
+WAN: A segunda interface é configurada como WAN, conectada à sua internet.
+
+Configuração via Terminal:
+
+Para configurar as interfaces de rede, utilize os comandos do sistema operacional (FreeBSD). 
+Consulte a documentação do OPNsense para obter instruções detalhadas.
+Observação: Se você não deseja configurar manualmente as interfaces, certifique-se de que o sistema esteja conectado à rede com um IP estático (por exemplo, 192.168.1.1).
+
+Próximos Passos
+
+Após a instalação e configuração básica, você poderá configurar as diversas funcionalidades do OPNsense, como:
+
+Firewall: Criação de regras de firewall para controlar o tráfego de rede.
+VPN: Configuração de conexões VPN para acesso remoto seguro.
+DHCP: Configuração de um servidor DHCP para atribuir endereços IP automaticamente.
+DNS: Configuração de um servidor DNS para resolução de nomes de domínio.
+
+Recomendações
+
+Documentação: Consulte a documentação oficial do OPNsense para obter informações mais detalhadas sobre todas as funcionalidades e configurações disponíveis.
+Comunidade: Participe da comunidade do OPNsense para tirar dúvidas e compartilhar experiências.
+Segurança: Mantenha o seu sistema atualizado com as últimas correções de segurança.
+Este guia tem como objetivo fornecer uma introdução básica ao OPNsense. Para uma configuração completa e personalizada, é recomendado aprofundar seus conhecimentos sobre redes e firewalls.
